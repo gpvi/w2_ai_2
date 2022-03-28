@@ -10,6 +10,7 @@ from sklearn.linear_model import LogisticRegression
 import os
 import joblib
 from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 
 #1.数据处理
 
@@ -28,8 +29,7 @@ ytrain = train_set[:,0]
 
 #2.训练模型
 
-model = LogisticRegression(solver='lbfgs',multi_class="multinomial",max_iter=100)
-
+model=KNeighborsClassifier(n_neighbors=15)
 
 model.fit(xtrain,ytrain)
     # print("valueerror")
