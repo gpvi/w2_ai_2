@@ -43,24 +43,3 @@ print(scores)
 
 print(scores.mean())
 
-# testdata = np.loadtxt(open('test.csv', 'r'), delimiter=",", skiprows = 1)
-# rtest,ctest = np.shape(test_set)
-# print("测试集大小：",rtest,ctest)
-# xtest = test_set[:,1:ctest]
-# # xtest = (xtest-xtrain_col_avg)/255
-# # xtest_col_avg = np.mean(xtest,axis = 0)
-#
-# std_scaler2 = StandardScaler()
-# std_scaler2.fit(xtest)
-# xtest =std_scaler2.transform(xtest)
-# ytest = test_set[:,0]
-# ypredic = model.predict(xtest)
-# errors = np.count_nonzero(ytest-ypredic)
-# print("预测完毕。错误：", errors, "条")
-# print("测试数据正确率:", (rtest - errors) / rtest)
-
-# dirs = 'testModel'
-# if not os.path.exists(dirs):
-#     os.makedirs(dirs)
-# joblib.dump(model, dirs+'/model.pkl')
-# print("模型已保存")
